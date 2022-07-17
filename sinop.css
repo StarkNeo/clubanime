@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Concert+One&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Anton', sans-serif;
+*/
+
+body{
+    background-color: yellow;
+    padding: 0;
+    margin: 0;
+    
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+   
+    
+}
+
+nav{
+    margin-top: 0;
+    background-color: black;
+}
+ul{
+    width: 10%;
+    height: 100vh;
+    color: white;
+    list-style: none;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    font-family: 'Concert One', cursive;
+    
+    
+    
+}
+
+li{
+    padding-top: 6rem;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: yellow;
+}
+a:visited{
+    color:green;
+    
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+
+a:focus{
+    color: aliceblue;
+}
+
+a:active{
+    color: aliceblue;
+
+}
+
+
+#principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+}
+#principal h1{
+    font-size: 5rem;
+}
+
+#principal h1 span{
+    font-size: 1rem;
+}
+#sinopsis{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    height: 20rem;
+    justify-content: center;
+    
+}
+#sinopsis h1{
+    font-size: 3rem;
+}
+
+#menu-mobile{
+    display: none;
+    width: 100%;
+    background-color: black;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#menu-mobile a{
+    padding: 1rem;
+}
+@media only screen and (max-width:875px){
+    #sinopsis{
+        width: 90%;
+    }
+    #principal h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #principal h1 span{
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:535px){
+    #principal{
+        justify-content: space-around;
+    }
+    #sinopsis p{
+        font-size: 0.7rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #nav-main, #nav-second{
+        display: none;
+    }
+    
+    #menu-mobile{
+        display: flex;
+        position: absolute;
+        
+        
+
+    }
+    #principal{
+        margin-top: 5rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #sinopsis p{
+        font-size: 1rem;
+    }
+
+}
+
+/*FOOTER SECTION*/
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /*padding: 0 2rem;*/
+    background-color: black;
+    color: aliceblue;
+}
+footer img{
+    width: 3rem;
+    height: 3rem;
+}
+
+@media only screen and (max-width:600px){
+   
+    footer img{
+    width: 2rem;
+    height: 2rem;
+   } 
+    
+}
+
+@media only screen and (max-width:412px){
+    footer{
+        justify-content: center;
+        height: 10%;
+    }
+    footer img{
+        width: 1rem;
+        height: 1rem;
+        padding: 1rem;
+    }
+}
+
